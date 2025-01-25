@@ -109,6 +109,11 @@ export const translations: Translations = {
         uz: "Telefon raqamingiz",
         ru: "Номер телефона",
     },
+    "request.send": {
+        en: "Send",
+        uz: "Yuborish",
+        ru: "Отправить",
+    },
 
     // About
     "about.welcome": {
