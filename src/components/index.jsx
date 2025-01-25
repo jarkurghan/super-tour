@@ -8,7 +8,7 @@ const Hero = () => {
 
     return (
         <div className="w-full">
-            <div className="relative w-full h-[265px] bg-cover bg-center mt-16" style={{ backgroundImage: 'url("/src/assets/bg-header.png")' }}>
+            <div className="relative w-full h-[265px] bg-cover bg-center mt-16" style={{ background: "linear-gradient(to bottom, #5494dc, #83c6f0)" }}>
                 <div className="relative z-10 h-full flex flex-col items-center max-w-[1920px] mx-auto px-4">
                     <div className="flex-1 flex flex-col items-center">
                         <div className="text-center mb-8 md:mb-12 hidden md:block mt-16">
