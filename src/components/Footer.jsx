@@ -29,10 +29,10 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className="space-y-4">
-                        <h3 className="font-semibold text-gray-900">Manzil</h3>
+                        <h3 className="font-semibold text-gray-900">{t("footer.address")}</h3>
                         <div className="flex flex-col space-y-1 text-gray-600 text-sm">
-                            <p className="leading-relaxed">O'zbekiston, Toshkent</p>
-                            <p className="leading-relaxed">Amir Temur ko'chasi 10, ofis 210</p>
+                            <p className="leading-relaxed">{t("footer.address1")}</p>
+                            <p className="leading-relaxed">{t("footer.address2")}</p>
                         </div>
                     </div>
                 </div>

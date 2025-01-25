@@ -7,9 +7,9 @@ const SendRequest = () => {
         <div id="request" className="relative w-full bg-cover bg-center" style={{ backgroundImage: 'url("/src/assets/bg-form.png")' }}>
             <div className="absolute inset-0 bg-white bg-opacity-60"></div>
             <div className="absolute w-full h-full flex items-center justify-center">
-                <div className="md:grid grid-cols-[1fr_1fr] gap-8 lg:max-w-screen-md md:max-w-screen-sm px-4">
+                <div className="md:grid grid-cols-[1fr_1fr] gap-8 lg:max-w-screen-lg md:max-w-screen-sm px-4">
                     <div className="w-full h-full flex items-center justify-center">
-                        <h1 className="text-3xl md:text-5xl font-bold text-slate-800 drop-shadow-lg mb-6">Leave an application for a consultation!</h1>
+                        <h1 className="text-3xl md:text-5xl font-bold text-slate-800 drop-shadow-lg mb-6">{t("request.title")}</h1>
                     </div>
                     <form className="flex flex-col gap-4">
                         <div class="flex">
@@ -21,7 +21,7 @@ const SendRequest = () => {
                             <input
                                 type="text"
                                 class="rounded-none rounded-e-lg bg-white border text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm border-gray-300 p-2.5"
-                                placeholder="Full name"
+                                placeholder={t("request.name")}
                             />
                         </div>
                         <div class="flex">
@@ -33,7 +33,7 @@ const SendRequest = () => {
                             <input
                                 type="text"
                                 class="rounded-none rounded-e-lg bg-white border text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm border-gray-300 p-2.5"
-                                placeholder="Phone number"
+                                placeholder={t("request.phone")}
                             />
                         </div>
                         <div class="flex">
@@ -46,7 +46,7 @@ const SendRequest = () => {
                             <input
                                 type="email"
                                 class="rounded-none rounded-e-lg bg-white border text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm border-gray-300 p-2.5"
-                                placeholder="E-mail"
+                                placeholder={t("request.email")}
                             />
                         </div>
                         <div>

@@ -24,7 +24,7 @@ export default function Navbar() {
     useEffect(() => {
         const handleClickOutside = (event) => {
             if (langMenuRef.current && !langMenuRef.current.contains(event.target)) {
-                setIsLangOpen(false);
+                if (window.innerWidth >= 768) setIsLangOpen(false);
             }
         };
         document.addEventListener("mousedown", handleClickOutside);
@@ -125,14 +125,14 @@ export default function Navbar() {
                             <div className="relative">
                                 <button
                                     onClick={() => setIsLangOpen(!isLangOpen)}
-                                    className="flex items-center space-x-1 text-gray-600 hover:text-sky-600 hover:bg-sky-50 transition-colors"
+                                    className="flex items-center justify-between space-x-1 text-gray-600 hover:text-sky-600 hover:bg-sky-50 transition-colors w-full"
                                 >
-                                    <span>{getCurrentLanguage()}</span>
+                                    {getCurrentLanguage()}
                                     <ChevronDown size={16} className={`transform transition-transform duration-200 ${isLangOpen ? "rotate-180" : ""}`} />
                                 </button>
 
                                 {isLangOpen && (
-                                    <div className="mt-2 py-0.5 w-14 bg-white rounded-lg shadow-sm ring-1 ring-black ring-opacity-5">
+                                    <div className="mt-2 py-0.5 bg-white rounded-lg shadow-sm ring-1 ring-black ring-opacity-5 flex">
                                         {languages.map(({ code, label }) => (
                                             <button
                                                 key={code}
