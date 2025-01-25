@@ -11,8 +11,8 @@ const Hero = () => {
             <div className="relative w-full h-[265px] bg-cover bg-center mt-16" style={{ background: "linear-gradient(to bottom, #5494dc, #83c6f0)" }}>
                 <div className="relative z-10 h-full flex flex-col items-center max-w-[1920px] mx-auto px-4">
                     <div className="flex-1 flex flex-col items-center">
-                        <div className="text-center mb-8 md:mb-12 hidden md:block mt-16">
-                            <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 md:mb-6 drop-shadow-lg">{t("hero.title")}</h1>
+                        <div className="text-center mb-8 md:mb-12 mt-16">
+                            <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold text-white mb-4 md:mb-6 drop-shadow-lg">{t("hero.title")}</h1>
                             <p className="text-lg md:text-2xl text-white drop-shadow-lg">{t("hero.subtitle")}</p>
                         </div>
                     </div>
