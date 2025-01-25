@@ -1,4 +1,5 @@
 import { useLanguage } from "../i18n/LanguageContext";
+import About from "./About";
 import Banner from "./Banner";
 import Footer from "./Footer";
 import Request from "./Request";
@@ -30,9 +31,10 @@ const Hero = () => {
 
             <div className="max-w-[1920px] mx-auto px-4">
                 <div id="banners-section" className="pt-24 md:pt-28">
-                    <div className="space-y-6 md:space-y-8">
-                        <Banner />
-                    </div>
+                    <Banner />
+                </div>
+                <div id="about-section" className="pt-24 md:pt-28">
+                    <About />
                 </div>
             </div>
 
